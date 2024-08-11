@@ -1,0 +1,105 @@
+:root {
+    --color-1: #031111;
+    --color-2: #152525;
+    --color-3: #1f3535;
+    --color-4: #cad0e4;
+    --white: #edf1ff;
+    --black: #444444;
+    --grey: #ccc;
+    --vibrant: #00ffff;
+    --danger: #761d30;
+    --success: #00ed33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    overflow-x: hidden;
+    background-color: var(--color-1);
+    font-family: 'Poppins';
+    color: var(--color-4);
+}
+
+th {
+    text-align: left;
+}
+
+a {
+    color: var(--color-4);
+}
+
+.form-group {
+    margin: 2rem 0;
+}
+
+.form-group > label {
+    display: block;
+}
+
+.form-group input{
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+}
+
+.form-group input[type="checkbox"]{
+    width: 2%;
+}
+
+.form-group input[type="radio"]{
+    width: 2%;
+}
+
+button {
+    padding: .7rem .8rem;
+    border-radius: 0.3rem;
+}
+
+.container-blank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.cardbody {
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 50vw;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: 1rem;
+    border: var(--border);
+    text-align: left;
+}
+
+td {
+    padding: 1rem;
+    border: var(--border);
+}
+
+td a {
+    color: var(--vibrant);
+}
+td a:hover {
+    color: var(--white);
+
+}

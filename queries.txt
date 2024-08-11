@@ -1,0 +1,23 @@
+CREATE TABLE posts (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT,
+    status BOOLEAN DEFAULT 0,
+    created_at TIMESTAMP NULL DEFAULT NULL,
+    updated_at TIMESTAMP NULL DEFAULT NULL
+);
+
+CREATE TABLE books (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL
+);
+
+INSERT INTO books (title) VALUES 
+('The Catcher in the Rye'),
+('To Kill a Mockingbird'),
+('1984'),
+('Pride and Prejudice'),
+('The Great Gatsby');
+
+
+ALTER TABLE books ADD cover varchar(255); 
